@@ -16,7 +16,7 @@ class SlidingPuzzle extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "School emblem Puzzle",
-      debugShowCheckedModeBanner: false,
+
       home: Board(),
     );
   }

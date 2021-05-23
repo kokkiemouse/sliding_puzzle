@@ -33,7 +33,7 @@ class _BoardState extends State<Board> {
       });
     }
 
-    return SafeArea(
+    return /*SafeArea(
       child: Container(
         height: size.height,
         color: Colors.blue,
@@ -45,6 +45,24 @@ class _BoardState extends State<Board> {
           ],
         ),
       ),
+    );*/
+    Scaffold(
+      appBar: AppBar(
+        title: Text("Sliding"),
+      ),
+      body: SafeArea(
+      child: Container(
+    height: size.height,
+    color: Colors.blue,
+    child: Column(
+    children: <Widget>[
+    MyTitle(size),
+    Grid(numbers, size, clickGrid),
+    Menu(reset, move, secondsPassed, size),
+    ],
+    ),
+    ))
+      ,
     );
   }
 
