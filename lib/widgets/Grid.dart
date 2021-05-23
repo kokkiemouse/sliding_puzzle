@@ -15,12 +15,12 @@ class Grid extends StatelessWidget {
     return Container(
       height: height * 0.60,
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(2.0),
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 4,
-            mainAxisSpacing: 5,
-            crossAxisSpacing: 5,
+            mainAxisSpacing: 0,
+            crossAxisSpacing: 0,
           ),
           itemCount: numbers.length,
           itemBuilder: (context, index) {

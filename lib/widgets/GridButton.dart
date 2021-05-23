@@ -8,19 +8,11 @@ class GridButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
-      child: Text(
-        text,
-        style: TextStyle(
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-      color: Colors.white,
-      shape: RoundedRectangleBorder(
-        borderRadius: new BorderRadius.circular(8.0),
-      ),
+
+    return MaterialButton(
       onPressed: click,
+      child: Image.asset("images/kousyou/" + text + ".png"),
+
     );
   }
 }
